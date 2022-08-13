@@ -21,12 +21,12 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask
-              
-      - name: Unit Test
-        run: python -m unittest -v test
 
       - name: Install Requirements
-        run:  pip install flask flask-wtf  
+        run:  pip install flask flask-wtf 
+              
+      - name: Unit Test
+        run: python -m unittest -v test 
 
   Deploy:
     needs: Build
